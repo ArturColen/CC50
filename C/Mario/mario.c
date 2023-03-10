@@ -12,7 +12,7 @@ int main(void)
     {
         height = get_int("Digite a altura da pirâmide: ");
     }
-    while ((height < 1) || (height > 8));
+    while (height < 1 || height > 8);
 
     buildPyramid(height);
 }
