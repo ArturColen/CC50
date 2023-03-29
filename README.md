@@ -7,6 +7,7 @@ Repository created to share the projects developed during the [Harvard](https://
 * Creating a counter for the amount of coins (cents) to be given as change to a user.
 * Generation of a credit card verifier, where you can find out if your format is valid, as well as your flag.
 * Creation of a calculator for the number of years it will take for a given population to go from one value to another.
+* Program created to analyze, through a text entered by the user, its readability level using the Coleman-Liau index.
 
 ## 💻 Technologies used 
 * [C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170): programming language
