@@ -9,6 +9,7 @@ Repository created to share the projects developed during the [Harvard](https://
 * Creation of a calculator for the number of years it will take for a given population to go from one value to another.
 * Program created to analyze, through a text entered by the user, its readability level using the Coleman-Liau index.
 * Development of a project that performs the encryption of a sentence from Caesar's calculus.
+* Creation a program that encrypts a sentence from a code entered by the user.
 
 ## 💻 Technologies used 
 * [C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170): programming language
