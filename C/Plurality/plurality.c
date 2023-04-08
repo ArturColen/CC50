@@ -29,8 +29,8 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // Populate array of candidates
     candidate_count = argc - 1;
+
     if (candidate_count > MAX)
     {
         printf("Maximum number of candidates is %i\n", MAX);
