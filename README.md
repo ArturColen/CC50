@@ -10,9 +10,10 @@ Repository created to share the projects developed during the [Harvard](https://
 * **Readability:** program created to analyze, through a text entered by the user, its readability level using the Coleman-Liau index.
 * **Caesar:** development of a project that performs the encryption of a sentence from Caesar's calculus.
 * **Substitution:** creation a program that encrypts a sentence from a code entered by the user.
-* **Scrabble:** Development of the scrabble game, in which two people must type a word and the winner is the one with the highest score (from the sum of the values of each letter of the word).
+* **Scrabble:** development of the scrabble game, in which two people must type a word and the winner is the one with the highest score (from the sum of the values of each letter of the word).
 * **Plurality:** program created to enter the names of the candidates in a given election and validate which was the winner based on the number of votes received.
-* **Runoff:** Project developed to obtain the result of an election using a ranking choice voting system, where it is possible to vote for more than one candidate and the result of all the users' choices will elect the candidate.
+* **Runoff:** project developed to obtain the result of an election using a ranking choice voting system, where it is possible to vote for more than one candidate and the result of all the users' choices will elect the candidate.
+* **Tideman:** The Tideman program is similar to Runoff (it is an order-of-priority voting method), but it checks the winner by pairs of candidates.
 
 ## 💻 Technologies used 
 * [C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170): programming language
