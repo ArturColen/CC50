@@ -11,6 +11,7 @@ Repository created to share the projects developed during the [Harvard](https://
 * **Caesar:** development of a project that performs the encryption of a sentence from Caesar's calculus.
 * **Substitution:** creation a program that encrypts a sentence from a code entered by the user.
 * **Scrabble:** Development of the scrabble game, in which two people must type a word and the winner is the one with the highest score (from the sum of the values of each letter of the word).
+* **Plurality:** program created to enter the names of the candidates in a given election and validate which was the winner based on the number of votes received.
 
 ## 💻 Technologies used 
 * [C](https://learn.microsoft.com/pt-br/cpp/c-language/?view=msvc-170): programming language
