@@ -1,10 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-// Max number of candidates
 #define MAX 9
 
-// Candidates have name and vote count
 typedef struct
 {
     string name;
@@ -16,13 +14,11 @@ candidate candidates[MAX];
 
 int candidate_count;
 
-// Function prototypes
 bool vote(string name);
 void print_winner(void);
 
 int main(int argc, string argv[])
 {
-    // Check for invalid usage
     if (argc < 2)
     {
         printf("Usage: plurality [candidate ...]\n");
@@ -45,23 +41,19 @@ int main(int argc, string argv[])
 
     int voter_count = get_int("Number of voters: ");
 
-    // Loop over all voters
     for (int i = 0; i < voter_count; i++)
     {
         string name = get_string("Vote: ");
 
-        // Check for invalid vote
         if (!vote(name))
         {
             printf("Invalid vote.\n");
         }
     }
 
-    // Display winner of election
     print_winner();
 }
 
-// Update vote totals given a new vote
 bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
@@ -76,7 +68,6 @@ bool vote(string name)
     return false;
 }
 
-// Print the winner (or winners) of the election
 void print_winner(void)
 {
     int most_voted = 0;
