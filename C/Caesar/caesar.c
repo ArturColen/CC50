@@ -8,7 +8,6 @@ void encrypt(char *text, int key);
 
 int main(int argc, string argv[])
 {
-    // Receive from the user the data that will be encrypted
     if (argc != 2)
     {
         printf("./caesar key\n");
@@ -33,7 +32,6 @@ int main(int argc, string argv[])
     printf("ciphertext: %s\n", text);
 }
 
-// Perform the Caesar calculation to encrypt the sentence
 void encrypt(char *text, int key)
 {
     for (int i = 0, n = strlen(text); i < n; i++)
