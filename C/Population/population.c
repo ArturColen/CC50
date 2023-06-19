@@ -8,14 +8,12 @@ int main(void)
     int initial_population = 0;
     int final_population = 0;
 
-    // Ask the user the value of the initial population
     do
     {
         initial_population = get_int("Digite o valor inicial da população: ");
     }
     while (initial_population < 9);
 
-    // Ask the user the value of the final population
     do
     {
         final_population = get_int("Digite o valor final da população: ");
@@ -25,7 +23,6 @@ int main(void)
     calculateYears(initial_population, final_population);
 }
 
-// Calculate the number of years to reach the final population size
 void calculateYears(int initial_population, int final_population)
 {
     int current_population = initial_population;
