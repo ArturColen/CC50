@@ -8,7 +8,6 @@ int main(void)
 {
     float cash;
 
-    // Receive from the user the amount of change (positive real number)
     do
     {
         cash = get_float("Digite o valor do troco a ser recebido (somente números): ");
@@ -18,7 +17,6 @@ int main(void)
     quantityCoins(cash);
 }
 
-// Calculate and display the quantity of coins to be delivered
 void quantityCoins(float cash)
 {
     int cents = round(cash * 100);
