@@ -7,14 +7,12 @@ void substitution(char *text, string key);
 
 int main(int argc, string argv[])
 {
-    // Check whether the program was initialized with the correct number of arguments
     if (argc != 2)
     {
         printf("./substitution key\n");
         return 1;
     }
 
-    // Verify that the key is the correct size
     int n = strlen(argv[1]);
     if (n < 26)
     {
@@ -22,7 +20,6 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // Scroll through the digits of the key, checking that they are all letters
     for (int i = 0; i < n; i++)
     {
         if (!isalpha(argv[1][i]))
@@ -43,7 +40,6 @@ int main(int argc, string argv[])
 
     string key = argv[1];
 
-    // Ask the user the text to be encrypted
     string text = get_string("plaintext: ");
 
     substitution(text, key);
@@ -51,7 +47,6 @@ int main(int argc, string argv[])
     printf("ciphertext: %s\n", text);
 }
 
-// Replace the letters of the entered phrase with the encryption code
 void substitution(char *text, string key)
 {
     for (int i = 0, j = 0, n = strlen(text); i < n; i++)
