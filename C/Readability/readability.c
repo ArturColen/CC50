@@ -8,13 +8,11 @@ void checkTextLevel(string text);
 
 int main(void)
 {
-    // Ask the user for the text
     string text = get_string("Digite um texto para a análise do graau de legibilidade: \n");
 
     checkTextLevel(text);
 }
 
-// Checking the readability level from the number of letters, words and phrases of the text
 void checkTextLevel(string text)
 {
     int number_letters = 0;
@@ -25,14 +23,12 @@ void checkTextLevel(string text)
 
     for (int i = 0, n = strlen(text); i < n; i++)
     {
-        // The function 'isalpha()' returns true if the character is a letter
         if (isalpha(text[i]))
         {
             number_letters++;
         }
         else
         {
-            // Check words and phrases from punctuation/spacing marks. This is done using 33 for '!', 46 for '.', 63 for '?' and 32 for spacing
             if (text[i] == 32)
             {
                 numbers_words++;
@@ -46,7 +42,6 @@ void checkTextLevel(string text)
 
     numbers_words += 1;
 
-    // Checking the readability level using the Coleman-Liau index
     float l = ((float) number_letters / numbers_words) * 100;
     float s = ((float) numbers_phrases / numbers_words) * 100;
 
