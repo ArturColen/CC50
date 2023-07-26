@@ -27,18 +27,21 @@ void buildPyramid(int height)
         {
             printf(" ");
         }
+
         j++;
 
         for (m = 0; m < j; m++)
         {
             printf("#");
         }
+
         printf("  ");
 
         for (m = 0; m < j; m++)
         {
             printf("#");
         }
+        
         printf("\n");
     }
 }
